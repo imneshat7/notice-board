@@ -7,11 +7,11 @@ export default function NoticeCard({ notice, onDeleteClick }) {
 
   return (
     <div className={`bg-white rounded-xl shadow-sm border-2 flex flex-col gap-3 p-5 ${
-      notice.priority === 'URGENT' ? 'border-red-200' : 'border-gray-100'
+      notice.priority?.toUpperCase() === 'URGENT' ? 'border-red-200' : 'border-gray-100'
     }`}>
       <div className="flex items-start justify-between gap-2">
         <h2 className="font-semibold text-gray-900 text-base leading-snug">{notice.title}</h2>
-        {notice.priority === 'URGENT' && (
+        {notice.priority?.toUpperCase() === 'URGENT' && (
           <span className="shrink-0 bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">
             URGENT
           </span>
