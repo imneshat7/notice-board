@@ -20,4 +20,4 @@ Add pagination to the notices list so the page doesn't slow down as notices grow
 
 ## AI usage
 
-Used Claude (Anthropic) to scaffold the project structure, generate API routes, Prisma schema, and page components. I reviewed all the code, understood how each part works, and debugged issues myself — including fixing Tailwind v4 config, resolving Prisma v7 breaking changes by downgrading to v6, and fixing the Supabase connection URL for Vercel's serverless environment.
+Used Claude (Anthropic) and Gemini to scaffold the project structure, generate API routes, Prisma schema, and page components. Debugging was also done with AI assistance — including fixing Tailwind v4 config, resolving Prisma v7 breaking changes by downgrading to v6, and fixing the Supabase connection URL for Vercel's serverless environment. I followed along with each step and understand the overall structure of the app.
